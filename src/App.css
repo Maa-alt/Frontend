@@ -1,0 +1,247 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Global body and background */
+body {
+  background-image: url('./image/image2.jpg'); /* Corrected path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
+
+/* App container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px #000000;
+  background-color: #6e706e80;
+}
+
+/* Header */
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Marquee replacement */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+  font-size: 2.5em; /* Increased font size */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a,
+.nav-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; /* Make text bold */
+  padding: 10px 15px; /* Ensure the same padding for height */
+  line-height: 1.5; /* Adjust line height for consistent height */
+  border: 2px solid #10d42a;
+  border-radius: 5px;
+  background: transparent; /* Ensure button has a transparent background */
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover,
+.nav-button:hover {
+  color: #fff;
+  background-color: #1caa1c80;
+  border-color: #60e59c;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+  padding: 10px;
+  font-size: 1.2em; /* Increased font size */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.2em; /* Increased font size */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1caa1c80;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1caa1c80;
+}
+
+/* Table styling for product list */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 1.1em; /* Increased font size */
+}
+
+.product-table th {
+  background-color: #1caa1c80;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #1caa1c80;
+}
+
+.product-table tbody tr:nth-child(odd) {
+  background-color: #1caa1c80;
+}
+
+.product-table td {
+  color: rgb(104, 231, 125);
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #1caa1c80;
+}
+
+.product-table tr:hover {
+  background-color: transparent;
+}
+
+/* General text and color settings */
+h2,
+h3 {
+  color: white;
+  font-size: 1.8em; /* Increased font size */
+}
+
+.actions {
+  display: flex;
+  gap: 10px; 
+}
+
+.actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #1caa1c80;;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.2em; /* Increased font size */
+}
+
+.actions button:hover {
+  background-color: #1caa1c80; /* Darker shade on hover */
+}
+
+/* Style for the table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+/* Table header styles */
+.styled-table thead th {
+  background-color: #1caa1c80; /* Header background color */
+  color: white; /* Header text color */
+  padding: 10px;
+  font-size: 1.2em; /* Increased font size */
+}
+
+/* Table body styles */
+.styled-table tbody tr {
+  background-color: transparent; /* Default row background color */
+}
+
+.styled-table tbody tr:hover {
+  background-color: transparent; /* Hover effect for rows */
+}
+
+.styled-table tbody td {
+  color: white; /* Change text color to white */
+  padding: 10px;
+  font-size: 1.1em; /* Increased font size */
+}
+
+
+.error {
+  color: red;
+  font-size: 1.1em; /* Increased font size */
+}
+
+.success {
+  color: green;
+  font-size: 1.1em; /* Increased font size */
+}
+
+.user-form {
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  background-color: #37f576; /* Red for logout */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding to match nav height */
+  cursor: pointer;
+  font-size: 1.2em; /* Increased font size */
+}
+
+.bold-white {
+  font-weight: bold;
+  color: white;
+}
+.success-message {
+  color: green;
+  text-align: right;
+  margin-top: 10px;
+}

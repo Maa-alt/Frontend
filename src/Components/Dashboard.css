@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #f2f5f3e8;
+}
+
+.section {
+  color: #f9faf9;
+  font-size: 1.2em; /* Increase font size, adjust as needed */
+  font-weight: bold; /* Make text bold */
+}
+
+header {
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #79ec75;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #5fec7e;
+}
+
+
+.message {
+  color: green;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.image-carousel {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.image-carousel .carousel {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-carousel {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+}
+.image-carousel {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel p {
+  margin-top: 10px;
+  color: white;
+}
+.dashboard {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.logout-button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-images {
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products-added {
+  margin-top: 20px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.product-table th {
+  background: #f4f4f4;
+}
+
+.product-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
